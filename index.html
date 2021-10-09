@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW4</title>
+</head>
+<body>
+<form method="POST" action="/">
+    Inputs: <br>
+    <input type="text" name="FirstName" placeholder="First name"><br>
+    <input type="text" name="LastName" placeholder="Last name"><br>
+    <input type="text" name="PhoneNumber" placeholder="Phonte number"><br>
+    <input type="text" name="Email" placeholder="Email"><br>
+    <input type="text" name="University" placeholder="University"><br>
+    <input type="text" name="Major" placeholder="Major"><br>
+    <button>Submits</button>
+</form>
+</body>
+</html>
+<!--
+<script src="https://cdn.jsdelivr.net/npm/superagent"></script>
+<script>
+function addContact(){
+    var FirstName = document.getElementById('FirstName').value;
+    var LastName = document.getElementById('LastName').value;
+    var PhoneNumber = document.getElementById('PhoneNumber').value;
+    var Email = document.getElementById('Email').value;
+    var University = document.getElementById('University').value;
+    var Major = document.getElementById('Major').value;
+    console.log(FirstName);
+    console.log(LastName);
+    console.log(PhoneNumber);
+    console.log(Email);
+    console.log(University);
+    console.log(Major);
+    var url = '/add?firstName=${FirstName}';
+
+
+    superagent
+       .get(url)
+       .end(function(err, res){
+           if (err) {
+               console.log('err:',err);
+           } else {
+               console.log('response:',res.text);
+           }
+       });
+}
+</script>
+-->
